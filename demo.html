@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Fun Demo 🎉</title>
+
+    <!-- Linking a CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      /* Inline CSS (just for demo) */
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .highlight {
+        color: blue;
+        font-weight: bold;
+      }
+
+      #special-message {
+        background: #a8dadc;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      img {
+        max-width: 200px;
+        border-radius: 10px;
+      }
+
+      form {
+        margin-top: 20px;
+        background: #f1faee;
+        padding: 15px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+
+      input,
+      select,
+      button {
+        margin: 5px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="highlight">Welcome to the Frontend Playground 🎨</h1>
+
+    <p id="special-message">
+      This text is styled using an <strong>ID selector</strong>.
+    </p>
+
+    <!-- Data attributes -->
+    <button data-color="pink" onclick="changeBackground(this)">
+      Change BG to Pink
+    </button>
+    <button data-color="lightblue" onclick="changeBackground(this)">
+      Change BG to Light Blue
+    </button>
+
+    <!-- Images and Image Map -->
+    <h2>Click the image map below 👇</h2>
+    <img
+      src="https://i.imgur.com/4AiXzf8.jpeg"
+      alt="Cute Cat"
+      usemap="#catmap"
+    />
+
+    <map name="catmap">
+      <area
+        shape="rect"
+        coords="0,0,100,100"
+        alt="Cat Head"
+        href="https://en.wikipedia.org/wiki/Cat"
+        target="_blank"
+      />
+      <area
+        shape="rect"
+        coords="100,100,200,200"
+        alt="Cat Body"
+        href="https://en.wikipedia.org/wiki/Kitten"
+        target="_blank"
+      />
+    </map>
+
+    <!-- Input controls & forms -->
+    <h2>Join the Fun Club 📝</h2>
+    <form onsubmit="handleForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="color">Favorite Color:</label>
+      <select id="color" name="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="newsletter" /> Subscribe to newsletter
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Including JavaScript inside HTML -->
+    <script>
+      function changeBackground(button) {
+        const color = button.getAttribute("data-color");
+        document.body.style.background = color;
+      }
+
+      function handleForm(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const color = document.getElementById("color").value;
+        alert(`Welcome ${name}! Your favorite color is ${color}. 🎉`);
+      }
+    </script>
+  </body>
+</html>

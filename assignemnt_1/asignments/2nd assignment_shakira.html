@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2nd Assignment</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f9f9;
+        font-family: arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        background: rgb(63, 62, 62);
+        padding: 25px;
+        border-radius: 5px;
+        box-shadow: 1px;
+        width: 300px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+      input.user,
+      input.lock {
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        border: none;
+        font-size: 17px;
+        background-color: gray;
+        border-radius: 2px;
+        font-family: sans-serif;
+      }
+      .input-user {
+        background-image: url(user.png);
+      }
+      .£input-lock {
+        background-image: url(lock.png);
+      }
+
+      .login-btn {
+        background-color: lightseagreen;
+        color: rgba(0, 0, 0, 0.753);
+        width: 320px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        margin-top: 10px;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div class="container">
+        <!-- email -->
+        <div class="form-group">
+          <input class="user" type="text" placeholder="Username" required />
+        </div>
+        <!-- Password -->
+
+        <div class="form-group">
+          <input class="lock" type="password" placeholder="********" required />
+        </div>
+        <div>
+          <a href="#"><button class="login-btn">LOGIN</button></a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

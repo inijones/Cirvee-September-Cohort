@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Clash-Grotesk";
+    src: url("fonts/ClashGrotesk-Variable.ttf");
+}
+
+body {
+    font-family: "Clash-Grotesk";
+    margin: 0;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #d7f0f5;
+    padding: 30px;
+    width: 420px;
+}
+
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+p{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+h4{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group {
+     margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;       
+    border-radius: 6px;           
+    font-size: 14px;              
+    box-sizing: border-box; 
+}
+
+.forgot-password {
+    font-size: 13px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #294551;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.google-btn,
+.apple-btn {
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.google-btn {
+    background-color: white;
+    color: #294551;
+}
+
+.google-btn:hover {
+    background-color: #f1f3f4;
+    transform: translateY(-2px);
+}
+
+.apple-btn {
+    background-color: white;
+    color: #294551;
+}
+
+.apple-btn:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+.google-btn img,
+.apple-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+#description {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+#description a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#description a:hover {
+    text-decoration: underline;
+}
+    
+
+
+
+

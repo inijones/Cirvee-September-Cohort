@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 2</title>
+  </head>
+  <style>
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-btn:hover {
+      background: #1669c1;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f9f9;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 1px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      background-color: rgba(0, 0, 0, 0.76);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 95%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: none;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      border-radius: 1px;
+      background-color: rgb(2, 184, 184);
+      color: black;
+    }
+
+    .input-wrapper img {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: 533px;
+      top: 240px;
+      align-items: start;
+    }
+
+    .input-wrapper2 img {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 287px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form class="form-group">
+        <div class="input-wrapper">
+          <img src="username-icon-png-20.jpg" alt="Username" />
+          <input type="text" placeholder="       Username" />
+        </div>
+        <br />
+        <div class="input-wrapper2">
+          <img src="2fa06eebc572c7228adaee808d659282.jpg" alt="password" />
+          <input type="password" placeholder="       ************" />
+        </div>
+        <br />
+
+        <button type="button" class="login-btn">LOGIN</button>
+      </form>
+    </div>
+  </body>
+</html>

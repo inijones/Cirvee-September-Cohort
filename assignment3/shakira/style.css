@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(91, 231, 91, 0.692);
+  font-family: arial, Helvetica, sans-serif;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 280px;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  background-color: rgba(160, 155, 155, 0.473);
+}
+
+.login-btn {
+  width: 300px;
+  padding: 10px;
+  background: limegreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn :hover {
+  background: lightgreen;
+}
+
+.not-reg {
+  margin-top: 15px;
+  text-align: center;
+  font-family: cochin;
+  font-size: 14px;
+  color: #555;
+}
+
+a {
+  color: limegreen;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+
+    <style>
+      .title {
+        text-align: center;
+        color: green;
+        font-size: 2.5rem;
+      }
+
+      body {
+        align-items: center;
+      }
+
+      #description {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      #fun-club {
+        text-align: center;
+        color: red;
+        margin-bottom: 20px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 10px;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #first-name-label {
+        text-align: start;
+        margin-left: 20px;
+      }
+
+      .remember-me {
+        display: flex;
+        align-items: start;
+        margin-left: 20px;
+        gap: 8px;
+      }
+
+      .remember-me input {
+        margin: 0; /* removes browser default extra spacing */
+      }
+
+      .button {
+        margin-top: 30px;
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        gap: 20px;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+
+      .button img {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="title">Sign Up</h1>
+
+    <p id="description">This is a sign up page</p>
+
+    <h2 class="title">The Elements for Today</h2>
+
+    <img id="house" src="house_picture.jpeg" alt="House" width="100%" />
+
+    <h2 id="fun-club">Join the Fun Club</h2>
+
+    <!-- Form -->
+    <form class="form">
+      <label for="first-name" id="first-name-label">First Name</label>
+      <input type="text" id="first-name" name="first-name" required />
+
+      <label class="remember-me">
+        <input type="checkbox" name="rememeber_me" />
+        Remember me
+      </label>
+
+      <a href="#">Forgotten your password?</a>
+
+      <button type="submit" class="button">
+        <img src="google_icon.jpeg" alt="Google" width="30" />
+        Sign Up
+      </button>
+    </form>
+  </body>
+</html>

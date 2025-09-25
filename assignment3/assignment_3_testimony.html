@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: green;
+        
+            }
+
+            .container {
+                background: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+            }
+
+            h2 {
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-top: 0;
+                margin-bottom: 15px;
+                color: #555
+            }
+
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            input[type="text"],
+            input[type=password] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            .login-btn {
+                width: 100%;
+                padding: 10px;
+                background: rgb(8, 168, 8);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .login-btn:hover {
+                background: greenyellow;
+            }
+
+            p {
+                font-size: 14.5;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            p a {
+                color: rgb(84, 228, 84);
+                text-decoration: none;
+            }
+
+            
+
+        </style>
+    </head>
+
+
+
+    <body>
+        <!--div mean Division. It is used like a container that can be edited-->
+        <div class="container">
+
+            <form>
+                <!--Username-->
+                <div class="form-group">
+                    <input type="text" placeholder="username" required>
+                </div>
+                <!--Password-->
+                <div class="form-group">
+                    <input type="password" placeholder="password" required>
+                </div>
+
+                <!--login In Button-->
+                <button type="button" class="login-btn">LOGIN</button>
+
+                </button>
+
+            </form>
+
+            <br>
+
+             <p>Not registered? <a href="#">Create an account</a></p>
+        </div>
+
+    </body>
+</html>

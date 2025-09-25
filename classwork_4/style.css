@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Clash-Grotesk";
+  src: url("fonts/ClashGrotesk-Variable.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Clash-Grotesk";
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  color: #2c6272;
+}
+
+.view-more {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.view-more::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.furniture-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.item {
+  flex: 0 0 180px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.item img {
+  width: 260px;
+  height: 260px;
+  border-radius: 12px 12px 0 0;
+}
+
+.item-header .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.item h5 {
+  padding-left: 10px;
+}
+
+.item .price {
+  color: #2c6272;
+  padding-left: 10px;
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: 800;
+}

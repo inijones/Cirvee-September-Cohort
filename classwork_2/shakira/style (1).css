@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.whole-sect{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.sect-1{
+    background-color: whitesmoke;
+    height: 500px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.watch-img{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.cluse{
+    text-align: center;
+    font-family: lucida sans;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cluse-p{
+    text-align: center;
+    margin-top: 10px;
+}
+.cluse-price{
+    text-align: center;
+    color: lightseagreen;
+    margin-top: 10px;
+}
+
+.cluse-star{
+    text-align: center;
+    color: goldenrod;
+    border: none;
+    margin-top: 10px;
+}
+.cluse-span{
+    color: gray;
+}
+
+.cluse-cart{
+    background-color: lightseagreen;
+    color: white;
+    width: 200x;
+    height: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+    
+    .sect-2{
+    background-color: whitesmoke;
+    height: 520px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+ 
+
+.Nike-img{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.NIKE-WRITE{
+    text-align: center;
+    font-family: lucida sans;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.Nike-p{
+    text-align: center;
+    margin-top: 15px;
+}
+.Nike-price{
+    text-align: center;
+    color: orangered;
+    margin-top: 10px;
+}
+
+.Nike-star{
+    text-align: center;
+    color: goldenrod;
+    border: none;
+    margin-top: 20px;
+}
+.Nike-span{
+    color: gray;
+}
+
+    
+
+.Nike-cart{
+    background-color:orangered;
+    color: white;
+    width: 200x;
+    height: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+
+
+
+.sect-3{
+    background-color: whitesmoke;
+    height: 530px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.jersey-img{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.jersey{
+    text-align: center;
+    font-family: lucida sans;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.jersey-p{
+    text-align: center;
+    margin-top: 10px;
+}
+.jersey-price{
+    text-align: center;
+    color: goldenrod;
+    margin-top: 10px;
+}
+
+.jersey-star{
+    text-align: center;
+    color: goldenrod;
+    border: none;
+    margin-top: 10px;
+}
+.jersey-span{
+    color: gray;
+}
+
+.jersey-cart{
+    background-color:rgb(231, 187, 76);
+    color: white;
+    width: 200x;
+    height: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 72px;
+    font-size: 15px;
+}
+    
+
+
+
+

@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px ;
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+   border-radius: 2px;
+   width: 220pt; 
+   height: 25%;
+}
+
+.input-container {
+    display: flex;
+    background: transparent;
+    margin: 0px 10px ;
+    padding: 10px 10px;
+
+}
+
+.input-container input {
+    background: transparent;
+    border-color: aliceblue;
+    width: 100%;
+    padding: 10px;
+
+
+}
+
+.input-container input::placeholder {
+    color: grey;
+}
+
+
+.login-button {
+    background: green;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 20px;
+    text-align: center;
+
+}
+
+
+

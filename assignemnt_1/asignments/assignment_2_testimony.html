@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Assignment 2 — Login Mockup</title>
+    <style>
+      /* Page background and centering */
+      :root {
+        --card-bg: #3d3d3d; /* dark outer card */
+        --input-bg: #cfcfcf; /* light grey input background */
+        --accent: #66bfb4; /* teal login button */
+        --input-height: 36px;
+        --card-width: 320px;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: "Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial;
+        background: #fafafa;
+        color: #111;
+      }
+
+      /* center the card both horizontally and vertically */
+      .wrap {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        box-sizing: border-box;
+      }
+
+      .card {
+        width: var(--card-width);
+        background: var(--card-bg);
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+      }
+
+      /* inner form spacing */
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      /* input row: icon + input aligned */
+      .input-row {
+        display: flex;
+        align-items: center;
+        background: var(--input-bg);
+        border-radius: 2px;
+        height: var(--input-height);
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      /* small icon container */
+      .input-row svg {
+        width: 16px;
+        height: 16px;
+        flex: 0 0 16px;
+        margin-right: 10px;
+        opacity: 0.6;
+      }
+
+      /* actual text input */
+      .input-row input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 13px;
+        width: 100%;
+      }
+
+      /* login button */
+      .btn {
+        height: 36px;
+        border: none;
+        background: var(--accent);
+        color: #0e0e0e;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+
+      /* small responsive tweak */
+      @media (max-width: 360px) {
+        .card {
+          width: 92%;
+        }
+      }
+
+      /* focus style for inputs */
+      .input-row:focus-within {
+        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.06);
+      }
+
+      /* subtle icon colors to mimic the screenshot */
+      .icon-muted {
+        fill: #8a8a8a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card" role="region" aria-label="Login box">
+        <form
+          class="form"
+          onsubmit="event.preventDefault(); alert('Login submitted (demo)');"
+        >
+          <!-- Username row -->
+          <label class="input-row" for="username">
+            <!-- user icon (inline SVG) -->
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+              class="icon-muted"
+            >
+              <path
+                d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.2c-3.3 0-9.8 1.7-9.8 5v1.6h19.6V19c0-3.3-6.5-5-9.8-5z"
+              />
+            </svg>
+
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="Username"
+              autocomplete="username"
+            />
+          </label>
+
+          <!-- Password row -->
+          <label class="input-row" for="password">
+            <!-- lock icon -->
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+              class="icon-muted"
+            >
+              <path
+                d="M17 8h-1V6.2C16 3.1 13.9 1 10.8 1S5.6 3.1 5.6 6.2V8H4c-1.1 0-2 .9-2 2v9.8C2 21.9 2.9 22.8 4 22.8h13.9c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM8.6 6.2c0-1.9 1.6-3.5 3.5-3.5s3.5 1.6 3.5 3.5V8H8.6V6.2zM12 14.5c-.9 0-1.6-.7-1.6-1.6S11.1 11.3 12 11.3s1.6.7 1.6 1.6S12.9 14.5 12 14.5z"
+              />
+            </svg>
+
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="****"
+              autocomplete="current-password"
+            />
+          </label>
+
+          <button class="btn" type="submit">LOGIN</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
