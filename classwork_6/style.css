@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Lexend-Zetta";
+  src: url("fonts/LexendZetta-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend-Zetta";
+  background-color: #0d3b2e; /* dark green background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.menu-container {
+  text-align: center;
+}
+
+.item {
+  height: 300px;
+  width: 200px;
+}
+
+.menu-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 4px;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.menu-item {
+  height: 160px;
+  width: 160px;
+  background-color: #1a4d3b;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.menu-item:hover {
+  transform: scale(1.05);
+}
+.menu-item img {
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  max-width: 120px;
+  border-radius: 8px;
+}
+.menu-item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
