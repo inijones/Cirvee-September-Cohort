@@ -35,6 +35,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
+
+
 .menu-item {
   height: 160px;
   width: 160px;

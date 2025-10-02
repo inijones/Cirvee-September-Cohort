@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "ClashGrotesk";
+  src: url("fonts/ClashGrotesk-Variable.ttf");
+}
+
+* {
+  font-family: "ClashGrotesk";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.buttons img {
+  height: 24px;
+  width: 24px;
+}
+
+.logo img {
+  width: 152px;
+  height: 39px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav .buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav .buttons .login {
+  background: #fff;
+  color: #000;
+  width: 92px;
+  background-color: #ebf8f9;
+}
+
+nav .buttons .signup {
+  background: transparent;
+  border-radius: 6px;
+  color: #ebf8f9;
+  border: 2px solid #ebf8f9;
+}
+
+/* Hero Section */
+.hero {
+  height: 50vh;
+  background: url("./images/image_bg.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buy-now {
+  display: flex;
+  align-items: center; /* vertically centers text & icon */
+  gap: 8px; /* space between text and icon */
+  border: none;
+  background: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buy-now img {
+  width: 16px; /* adjust size if needed */
+  height: 16px;
+}
+
+/* Call to Action */
+.cta {
+  margin-top: 3rem;
+  background: url("./images/image_bg2.png") center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.cta form {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.cta input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.cta button {
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .cta {
+    padding: 2rem 1rem;
+  }
+  .cta form {
+    flex-direction: column;
+  }
+  .cta button {
+    width: 100%;
+  }
+}
