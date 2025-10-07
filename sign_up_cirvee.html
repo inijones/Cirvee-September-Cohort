@@ -4,101 +4,149 @@
     <title>Sign Up</title>
 
     <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f9f9f9;
+      }
+
+      /* Title Styles */
       .title {
         text-align: center;
         color: green;
         font-size: 2.5rem;
+        margin-bottom: 10px;
       }
 
-      body {
-        align-items: center;
-      }
-
+      /* Description */
       #description {
         text-align: center;
-        font-size: 1.5rem;
-      }
-
-      #fun-club {
-        text-align: center;
-        color: red;
+        font-size: 1.2rem;
         margin-bottom: 20px;
       }
 
-      input {
+      /* Section Header */
+      #fun-club {
+        text-align: center;
+        color: red;
+        margin: 20px 0;
+      }
+
+      /* Form Styles */
+      .form {
+        width: 100%;
+        max-width: 400px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      .form label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: block;
+        font-weight: bold;
+      }
+
+      .form input[type="text"] {
         width: 100%;
         padding: 10px;
-        margin-top: 10px;
-        margin-left: 20px;
-        border-radius: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 15px;
       }
 
-      .form {
-        display: flex;
-        flex-direction: column;
-      }
-
-      #first-name-label {
-        text-align: start;
-        margin-left: 20px;
-      }
-
+      /* Remember Me Section */
       .remember-me {
         display: flex;
-        align-items: start;
-        margin-left: 20px;
+        align-items: center;
         gap: 8px;
+        margin-bottom: 10px;
       }
 
-      .remember-me input {
-        margin: 0; /* removes browser default extra spacing */
+      .remember-me input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
       }
 
+      /* Forgot Password Link */
+      .form a {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: blue;
+        text-decoration: none;
+      }
+
+      .form a:hover {
+        text-decoration: underline;
+      }
+
+      /* Button Styles */
       .button {
-        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         background-color: blue;
         color: white;
         border: none;
-        padding: 10px;
+        padding: 12px;
+        width: 100%;
         border-radius: 10px;
+        font-size: 1.2rem;
         cursor: pointer;
-        gap: 20px;
-        align-items: center;
-        font-size: 1.5rem;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: darkblue;
       }
 
       .button img {
-        margin-top: 10px;
+        width: 24px;
+        height: 24px;
+      }
+
+      /* Image Section */
+      #house {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        margin: 20px 0;
       }
     </style>
   </head>
 
   <body>
     <h1 class="title">Sign Up</h1>
-
     <p id="description">This is a sign up page</p>
 
     <h2 class="title">The Elements for Today</h2>
-
-    <img id="house" src="house_picture.jpeg" alt="House" width="100%" />
+    <img id="house" src="house_picture.jpeg" alt="House" />
 
     <h2 id="fun-club">Join the Fun Club</h2>
 
-    <!-- Form -->
+    <!-- Sign Up Form -->
     <form class="form">
-      <label for="first-name" id="first-name-label">First Name</label>
+      <label for="first-name">First Name</label>
       <input type="text" id="first-name" name="first-name" required />
 
-      <label class="remember-me">
-        <input type="checkbox" name="rememeber_me" />
-        Remember me
-      </label>
+      <div class="remember-me">
+        <input type="checkbox" id="remember-me" name="remember_me" />
+        <label for="remember-me">Remember me</label>
+      </div>
 
       <a href="#">Forgotten your password?</a>
 
       <button type="submit" class="button">
-        <img src="google_icon.jpeg" alt="Google" width="30" />
-        Sign Up
+        <img src="google_icon.jpeg" alt="Google Icon" />
+        <span>Sign Up</span>
       </button>
     </form>
   </body>

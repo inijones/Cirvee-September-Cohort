@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(fonts/Gilroy-Bold.ttf);
+}
+
+* {
+  font-family: "Gilroy-Bold";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.panto {
+  font-weight: 600;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.icon img {
+  height: 30px;
+  width: 30px;
+}
+
+/* background-section */
+
+.background-sect {
+  background: url("images/image.png") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+}
+
+.bg-text {
+  margin-top: -350px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.Interior {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.Interior span {
+  display: block;
+  font-weight: 900;
+  text-align: center;
+}
+
+.bg-text p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: #ccc;
+  line-height: 1.4;
+  margin-left: 3rem;
+}
+
+.bg-text p span {
+  margin-left: 100px;
+  display: block;
+  color: ccc;
+  font-weight: 100;
+}
