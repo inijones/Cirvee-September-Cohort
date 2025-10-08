@@ -1,18 +1,32 @@
-let myNumber = 1;
+let name = "Shakirah";
 
-console.log(myNumber);
+console.log("Congrats to " + name);
 
-// What is Javascript
-// Setting Up the Development Environment
-// Javascript in Browser
-// Separation of Concerns
-// Javascript in Node
-// Variables
-// Constants
-// Primitive Types
-// Dynamic Tping
-// Objects
-// Arrays
-// Functions
-// Types of Functions
+let x = 1;
+console.log(x + 2);
+console.log(x * 9);
 
+let myName = "Ini";
+let myAge = 27;
+let isCoder = true;
+
+console.log(typeof myName);
+console.log(typeof myAge);
+console.log(typeof isCoder);
+
+// Testimony asked a question
+
+let myFriend;
+
+console.log(myFriend);
+console.log(myName);
+myName = null;
+console.log(myName);
+
+// let or const Variable declaration
+let ourNumber = 5;
+ourNumber = "Six"; // Dynamic Typing: Types change
+console.log(ourNumber);
+
+const ourTutor = "Ini";
+console.log("Our Tutor is " + ourTutor);
