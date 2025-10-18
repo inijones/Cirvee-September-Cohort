@@ -20,5 +20,9 @@ console.log(myNumber);
 // Functions
 // Types of Functions
 
+// Conditionals
+// Loops 
+
+
 
 

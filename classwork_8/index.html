@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Helvetica;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .student-container {
+            text-align: center;
+            width: 320px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 20px 4px 20px rgba(0, 0, 0, 0.2);
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid blue;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="student-container">
+        <img
+          id="student-photo"
+          class="profile-image"
+          src="https://randomuser.me/api/portraits/men/2.jpg"
+          alt="Student Picture"
+        />
+    
+
+        <h2 id="student-name"></h2>
+        <div class="info">
+          <span class="label">Age:</span> <span id="student-age"></span>
+        </div>
+        <div class="info">
+          <span class="label">Gender:</span> <span id="student-gender"></span>
+        </div>
+        <div class="info">
+          <span class="label">Date of Birth:</span>
+          <span id="student-dob"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        // Testimony Object
+        const testimony = 
+        
+        {
+            name: "Testimony Subair",
+            age: 17,
+            gender: "Male",
+            profilePhoto: "https://randomuser.me/api/portraits/men/4.jpg",
+            dateOfBirth: "2008-02-16"
+        }
+
+        // Load data into html
+        document.getElementById("student-photo").src = testimony.profilePhoto;
+        document.getElementById("student-age").textContent = testimony.age;
+        document.getElementById("student-name").textContent = testimony.name;
+        document.getElementById("student-gender").textContent = testimony.gender;
+        document.getElementById("student-dob").textContent = testimony.dateOfBirth;
+    </script>
+  </body>
+</html>

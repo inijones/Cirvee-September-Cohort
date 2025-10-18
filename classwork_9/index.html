@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click to Increase</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+
+      .click-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        font-size: 40px;
+        font-weight: 400;
+        color: #007bff;
+      }
+
+      button {
+        padding: 12px;
+        width: 160px;
+        border-radius: 8px;
+        border: none;
+        font-size: 20px;
+        background-color: #007bff;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="click-container">
+      <h1>Click Counter</h1>
+      <h2 id="counter">0</h2>
+      <button id="increaseBtn">Click Me!</button>
+    </div>
+
+    <script>
+      // Declare the variable that needs to updated
+      const counter = document.getElementById("counter");
+      const button = document.getElementById("increaseBtn");
+
+      let count = 0;
+
+      button.addEventListener("click", () => {
+        // count value increases by one
+        count++;
+        // load back the new value of counter with the id
+        if (count <= 20) {
+          counter.textContent = count;
+        } else {
+          counter.textContent = 20;
+        }
+      });
+    </script>
+  </body>
+</html>
